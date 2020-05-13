@@ -5,9 +5,9 @@ User list
 <table>
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Role</th>
-            <th>Role</th>
+            <th>Логин</th>
+            <th>Роль</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
