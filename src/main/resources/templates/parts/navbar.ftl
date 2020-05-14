@@ -12,9 +12,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="/">На главную</a>
             </li>
+            <#if user??>
             <li class="nav-item">
                 <a class="nav-link" href="/main">Сообщения</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user-messages/${currentUserId}">Мои сообщения</a>
+            </li>
+            </#if>
             <#if isAdmin>
             <li class="nav-item">
                 <a class="nav-link" href="/user">Пользователи</a>
@@ -27,6 +32,11 @@
             </#if>
         </ul>
     </div>
-    <div class="navbar-text mr-3">${name}</div>
+    <#if user??>
+        <div class="navbar-text mr-3">${name}</div>
+    <#else>
+        <div></div>
+    </#if>
+
     <@l.logout />
 </nav>
