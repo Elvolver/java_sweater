@@ -11,7 +11,7 @@
                        value="<#if message??>${message.text}</#if>"
                        type="text"
                        name="text"
-                       placeholder="Введите сообщение">
+                       placeholder="Введите сообщение" />
                 <#if textError??>
                 <div class="invalid-feedback">
                     ${textError}
@@ -23,7 +23,7 @@
                        value="<#if message??>${message.tag}</#if>"
                        type="text"
                        name="tag"
-                       placeholder="Тэг">
+                       placeholder="Тэг" />
                 <#if tagError??>
                 <div class="invalid-feedback">
                     ${tagError}
@@ -32,7 +32,7 @@
             </div>
             <div class="form-group col-md-12">
                 <div class="custom-file">
-                    <input class="custom-file-input" type="file" name="file" if="file">
+                    <input class="custom-file-input" type="file" name="file" if="file" />
                     <label class="custom-file-label" for="file">Выберите файл</label>
                 </div>
             </div>

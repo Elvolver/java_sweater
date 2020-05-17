@@ -15,7 +15,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title">
-                            Subscriptions
+                            Подписки
                         </div>
                         <h3 class="card-text">
                             <a href="/user/subscriptions/${userChannel.id}/list">${subscriptionsCount}</a>
@@ -27,7 +27,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title">
-                            Subscribers
+                            Подписчики
                         </div>
                         <h3 class="card-text">
                             <a href="/user/subscribers/${userChannel.id}/list">${subscribersCount}</a>
